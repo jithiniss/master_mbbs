@@ -9,7 +9,7 @@
         <meta name="author" content="" />
 
         <title>mastermbbs.com</title>
-
+        <link rel="icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/theme/css/fonts/linecons/css/linecons.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/theme/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -153,8 +153,8 @@
                         ?>
                         <div class="login-header">
                             <a href="dashboard-1.html" class="logo">
-                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/admin-logo.png" alt="" width="80" />
-                                <span>Master-MBBS Admin log in</span>
+                                <img style="width: 250px;" src="<?php echo Yii::app()->request->baseUrl; ?>/images/admin-logo.png" alt="" width="80" />
+                                <!--<span>Master-MBBS Admin log in</span>-->
                             </a>
 
                             <p>Dear user, log in to access the admin area!</p>

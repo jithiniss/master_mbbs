@@ -1,5 +1,5 @@
 
-<h3>Welcome To Smart-MBBS Admin &hellip;</h3>
+<h3>Welcome To Master-MBBS Admin &hellip;</h3>
 <br />
 <!-- Main Footer -->
 <!-- Choose between footer styles: "footer-type-1" or "footer-type-2" -->

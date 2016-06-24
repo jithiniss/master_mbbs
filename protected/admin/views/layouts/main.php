@@ -7,9 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Xenon Boostrap Admin Panel" />
         <meta name="author" content="" />
+        <title>Master-MBBS </title>
         <link rel="icon" href="<?php echo Yii::app()->request->baseUrl; ?>/images/favicon.ico" type="image/x-icon">
-        <title>smartmbbs.com</title>
-
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Arimo:400,700,400italic">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/theme/css/fonts/linecons/css/linecons.css">
         <link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/theme/css/fonts/fontawesome/css/font-awesome.min.css">
@@ -82,7 +81,6 @@
                             <h4>
                                 <span>Notifications</span>
                             </h4>
-
                             <ul class="list-unstyled">
                                 <li>
                                     <input type="checkbox" class="cbr cbr-primary" checked="checked" id="sp-chk1" />
@@ -160,11 +158,11 @@
                         <!-- logo -->
                         <div class="logo">
                             <a href="<?php echo Yii::app()->request->baseUrl . '/admin.php/site/home'; ?>" class="logo-expanded">
-                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/admin-logo.png" width="80" alt="" />
+                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-logo.png" width="80" alt="" />
                             </a>
 
                             <a href="<?php echo Yii::app()->request->baseUrl . '/admin.php/site/home'; ?>" class="logo-collapsed">
-                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/admin-logo.png" width="40" alt="" />
+                                <img src="<?php echo Yii::app()->request->baseUrl; ?>/images/home-logo.png" width="40" alt="" />
                             </a>
                         </div>
 
@@ -224,67 +222,19 @@
                                 <span class="title" >Masters</span>
                             </a>
                             <ul>
-
-                                <li>
-                                    <?php echo CHtml::link('Affluence Level', array('/masters/masterAffluenceLevel/admin')); ?>
-                                </li>
-
-                                <li>
-                                    <?php echo CHtml::link('Annual Income', array('/masters/MasterAnnualIncome/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Blood Group', array('/masters/MasterBloodGroup/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Body Type', array('/masters/MasterBodyType/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Caste', array('/masters/MasterCaste/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('City', array('/masters/MasterCity/admin')); ?>
-                                </li>
                                 <li>
                                     <?php echo CHtml::link('Country', array('/masters/MasterCountry/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Education Field', array('/masters/MasterEducationField/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Education Level', array('/masters/MasterEducationLevel/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Family Type', array('/masters/MasterFamilyType/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Family Value', array('/masters/MasterFamilyValue/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Health Information', array('/masters/MasterHealthInformation/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Occupation', array('/masters/MasterOccupation/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Religion', array('/masters/MasterReligion/admin')); ?>
-                                </li>
-                                <li>
-                                    <?php echo CHtml::link('Skin Tone', array('/masters/MasterSkinTone/admin')); ?>
                                 </li>
                                 <li>
                                     <?php echo CHtml::link('State', array('/masters/MasterState/admin')); ?>
                                 </li>
                                 <li>
-                                    <?php echo CHtml::link('Sub Caste', array('/masters/MasterSubCaste/admin')); ?>
+                                    <?php echo CHtml::link('City', array('/masters/MasterCity/admin')); ?>
                                 </li>
                             </ul>
                         </li>
-
-
                     </ul>
-
                 </div>
-
             </div>
 
             <div class="main-content">
@@ -611,7 +561,7 @@
                         <!-- Add your copyright text here -->
                         <div class="footer-text">
                             &copy; 2015
-                            <strong>smartmbbs.com </strong>
+                            <strong>mastermbbs.com </strong>
 
                         </div>
 
