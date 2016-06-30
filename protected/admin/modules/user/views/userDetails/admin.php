@@ -23,7 +23,7 @@
 
         <ol class="breadcrumb bc-1" >
             <li>
-                <a href="<?php echo Yii::app()->request->baseurl.'/site/home'; ?>"><i class="fa-home"></i>Home</a>
+                <a href="<?php echo Yii::app()->request->baseurl . '/site/home'; ?>"><i class="fa-home"></i>Home</a>
             </li>
 
             <li class="active">
@@ -40,47 +40,45 @@
 
     <div class="col-sm-12">
 
-        <a class="btn btn-secondary btn-icon btn-icon-standalone" href="<?php echo Yii::app()->request->baseurl.'/admin.php/user/userDetails/create'; ?>" id="add-note">
+        <a class="btn btn-secondary btn-icon btn-icon-standalone" href="<?php echo Yii::app()->request->baseurl . '/admin.php/user/userDetails/create'; ?>" id="add-note">
             <i class="fa-pencil"></i>
             <span>Add User Details</span>
         </a>
         <div class="panel panel-default">
-            <?php $this->widget('booster.widgets.TbGridView', array(
-            'type' => ' bordered condensed hover',
-            'id'=>'user-details-grid',
-            'dataProvider'=>$model->search(),
-            'filter'=>$model,
-            'columns'=>array(
-            		'id',
-		'user_id',
-		'first_name',
-		'last_name',
-		'email',
-		'password',
-		/*
-		'phone',
-		'parent_email',
-		'country',
-		'state',
-		'city',
-		'university',
-		'college',
-		'college_name',
-		'year',
-		'status',
-		'cb',
-		'ub',
-		'doc',
-		'dou',
-		*/
-
-            array(
-            'htmlOptions' => array('nowrap' => 'nowrap'),
-            'class' => 'booster.widgets.TbButtonColumn',
-            'template' => '{update}{delete}',
-            ),
-            ),
-            )); ?>
+            <?php
+            $this->widget('booster.widgets.TbGridView', array(
+                'type' => ' bordered condensed hover',
+                'id' => 'user-details-grid',
+                'dataProvider' => $model->search(),
+                'filter' => $model,
+                'columns' => array(
+                    'user_id',
+                    'first_name',
+                    'last_name',
+                    'email',
+                    'phone',
+                    'parent_email',
+                    //'country',
+                    //'state',
+                    'city',
+                    'university',
+                    'college',
+                    'college_name',
+                    'year',
+                    //'status',
+                    /*  'cb',
+                      'ub',
+                      'doc',
+                      'dou',
+                     */
+                    array(
+                        'htmlOptions' => array('nowrap' => 'nowrap'),
+                        'class' => 'booster.widgets.TbButtonColumn',
+                        'template' => '{update}{delete}',
+                    ),
+                ),
+            ));
+            ?>
         </div>
 
     </div>

@@ -170,7 +170,7 @@
 
 
                         <div class="form-group">
-                            <?php echo $form->textField($model, 'user_name', array('size' => 60, 'maxlength' => 500, 'class' => "form-control input-dark", 'placeholder' => "User name", 'autocomplete' => "off")); ?>
+                            <?php echo $form->textField($model, 'user_name', array('size' => 60, 'maxlength' => 500, 'class' => "form-control input-dark", 'placeholder' => "User name", 'autocomplete' => "off", 'autofocus' => 'true')); ?>
                             <?php echo $form->error($model, 'user_name'); ?>
                         </div>
 
