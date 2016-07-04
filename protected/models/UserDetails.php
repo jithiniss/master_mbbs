@@ -44,6 +44,7 @@ class UserDetails extends CActiveRecord {
                     //array('user_id, first_name, last_name, email, password, phone, parent_email, country, state, city, university, college, college_name, year, status, cb, ub, doc', 'required'),
                     array('first_name, last_name, email, password, phone, country, state, city, university, year', 'required', 'on' => 'create'),
                     array('email, parent_email', 'email', 'on' => 'create'),
+                    array('email, user_id', 'unique', 'on' => 'create'),
                     array('country, state, city, university, college, year, status, cb, ub', 'numerical', 'integerOnly' => true),
                     array('user_id', 'length', 'max' => 30),
                     array('first_name, last_name', 'length', 'max' => 100),
@@ -65,6 +66,8 @@ class UserDetails extends CActiveRecord {
                 // NOTE: you may need to adjust the relation name and the related
                 // class name for the relations automatically generated below.
                 return array(
+                    'unversity' => array(self::BELONGS_TO, 'MasterUniversity', 'university'),
+                    'city' => array(self::BELONGS_TO, 'MasterCity', 'city'),
                 );
         }
 

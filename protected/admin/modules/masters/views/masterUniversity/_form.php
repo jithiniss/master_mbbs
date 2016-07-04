@@ -23,9 +23,6 @@
     <br/>
     <div class="form-inline">
 
-
-
-
         <div class="form-group">
             <?php echo $form->labelEx($model, 'country_id'); ?>
             <?php echo CHtml::activeDropDownList($model, 'country_id', CHtml::listData(MasterCountry::model()->findAllByAttributes(array('status' => 1)), 'id', 'country'), array('empty' => '--Please select--', 'class' => 'form-control', 'options' => array('id' => array('selected' => 'selected')))); ?>
@@ -147,9 +144,6 @@
                         $('#MasterUniversity_city_id').html("<option value=''>--Select--</option>");
                     }
                 });
-
             });
-
     </script>
-
 </div><!-- form -->

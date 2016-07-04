@@ -59,17 +59,21 @@ class UserDetailsController extends Controller {
          */
         public function actionCreate() {
                 $model = new UserDetails('create');
-
                 // Uncomment the following line if AJAX validation is needed
                 // $this->performAjaxValidation($model);
 
                 if (isset($_POST['UserDetails'])) {
+
                         $model->attributes = $_POST['UserDetails'];
                         $model->cb = Yii::app()->session['admin']['id'];
                         $model->ub = Yii::app()->session['admin']['id'];
                         $model->doc = date('Y-m-d');
-                        if ($model->save())
+
+                        if ($model->save()) {
+                                $model->user_id = 'ABC' . $model->id;
+                                $model->save(false);
                                 $this->redirect(array('admin'));
+                        }
                 }
 
                 $this->render('create', array(

@@ -122,27 +122,25 @@
             <?php echo $form->textField($model, 'college', array('class' => 'form-control')); ?>
             <?php echo $form->error($model, 'college'); ?>
         </div>
-        <div>
 
-            <div class="form-group">
-                <?php echo $form->labelEx($model, 'college_name'); ?>
-                <?php echo $form->textField($model, 'college_name', array('size' => 60, 'maxlength' => 200, 'class' => 'form-control')); ?>
-                <?php echo $form->error($model, 'college_name'); ?>
-            </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model, 'year'); ?>
-                <?php echo $form->dropDownList($model, 'year', array('1' => '1st', '2' => '2nd', '3' => '3rd'), array('class' => 'form-control')); ?>
-                <?php echo $form->error($model, 'year'); ?>
-            </div>
-
-            <div class="form-group">
-                <?php echo $form->labelEx($model, 'status'); ?>
-                <?php echo $form->dropDownList($model, 'status', array('1' => 'Enabled', '0' => 'Disabled'), array('class' => 'form-control')); ?>
-                <?php echo $form->error($model, 'status'); ?>
-            </div>
-
+        <div class="form-group">
+            <?php echo $form->labelEx($model, 'college_name'); ?>
+            <?php echo $form->textField($model, 'college_name', array('size' => 60, 'maxlength' => 200, 'class' => 'form-control')); ?>
+            <?php echo $form->error($model, 'college_name'); ?>
         </div>
+
+        <div class="form-group">
+            <?php echo $form->labelEx($model, 'year'); ?>
+            <?php echo $form->dropDownList($model, 'year', array('1' => '1st', '2' => '2nd', '3' => '3rd'), array('class' => 'form-control')); ?>
+            <?php echo $form->error($model, 'year'); ?>
+        </div>
+
+        <div class="form-group">
+            <?php echo $form->labelEx($model, 'status'); ?>
+            <?php echo $form->dropDownList($model, 'status', array('1' => 'Enabled', '0' => 'Disabled'), array('class' => 'form-control')); ?>
+            <?php echo $form->error($model, 'status'); ?>
+        </div>
+
         <div class="form-group btns">
             <label>&nbsp;</label><br/>
             <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save', array('class' => 'btn btn-secondary btn-single pull-right', 'style' => 'border-radius:0px;padding: 10px 50px;')); ?>
@@ -186,9 +184,7 @@
                             $('#UserDetails_city').html("<option value=''>--Select--</option>");
                         }
                     });
-
                 });
-
         </script>
-
     </div><!-- form -->
+</div>
